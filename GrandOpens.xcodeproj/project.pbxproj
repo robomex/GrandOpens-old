@@ -31,6 +31,10 @@
 		DE61268C1B269D8B0009FB34 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DE61268B1B269D8B0009FB34 /* .gitignore */; };
 		DE6126941B26A3CB0009FB34 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE6126931B26A3CB0009FB34 /* ApiKeys.plist */; };
 		DE6126961B26A4E40009FB34 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6126951B26A4E40009FB34 /* ApiKeys.swift */; };
+		DEEF8C6E1B27F360004D2D3D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF8C6D1B27F360004D2D3D /* FeedViewController.swift */; };
+		DEEF8C701B27F6AD004D2D3D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF8C6F1B27F6AD004D2D3D /* ListViewController.swift */; };
+		DEEF8C721B27FA40004D2D3D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEF8C711B27FA40004D2D3D /* Social.framework */; };
+		DEEF8C741B27FA46004D2D3D /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEF8C731B27FA46004D2D3D /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,10 @@
 		DE61268B1B269D8B0009FB34 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = GrandOpens/.gitignore; sourceTree = "<group>"; };
 		DE6126931B26A3CB0009FB34 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		DE6126951B26A4E40009FB34 /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		DEEF8C6D1B27F360004D2D3D /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		DEEF8C6F1B27F6AD004D2D3D /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		DEEF8C711B27FA40004D2D3D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		DEEF8C731B27FA46004D2D3D /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEF8C741B27FA46004D2D3D /* Accounts.framework in Frameworks */,
+				DEEF8C721B27FA40004D2D3D /* Social.framework in Frameworks */,
 				DE61268A1B2697C80009FB34 /* libsqlite3.dylib in Frameworks */,
 				DE6126881B2697B30009FB34 /* libz.dylib in Frameworks */,
 				DE6126861B2697A80009FB34 /* SystemConfiguration.framework in Frameworks */,
@@ -142,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				DE61261C1B2505950009FB34 /* AppDelegate.swift */,
-				DE61263F1B2506100009FB34 /* Views */,
+				DE61263F1B2506100009FB34 /* ViewControllers */,
 				DE6126231B2505950009FB34 /* Main.storyboard */,
 				DE6126261B2505950009FB34 /* Images.xcassets */,
 				DE6126281B2505950009FB34 /* LaunchScreen.xib */,
@@ -179,17 +189,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DE61263F1B2506100009FB34 /* Views */ = {
+		DE61263F1B2506100009FB34 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				DE6126211B2505950009FB34 /* ViewController.swift */,
+				DEEF8C6D1B27F360004D2D3D /* FeedViewController.swift */,
+				DEEF8C6F1B27F6AD004D2D3D /* ListViewController.swift */,
 			);
-			name = Views;
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		DE6126701B2697040009FB34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DEEF8C731B27FA46004D2D3D /* Accounts.framework */,
+				DEEF8C711B27FA40004D2D3D /* Social.framework */,
 				DE6126891B2697C80009FB34 /* libsqlite3.dylib */,
 				DE6126871B2697B30009FB34 /* libz.dylib */,
 				DE6126851B2697A80009FB34 /* SystemConfiguration.framework */,
@@ -348,6 +362,8 @@
 			files = (
 				DE6126221B2505950009FB34 /* ViewController.swift in Sources */,
 				DE6126201B2505950009FB34 /* GrandOpens.xcdatamodeld in Sources */,
+				DEEF8C701B27F6AD004D2D3D /* ListViewController.swift in Sources */,
+				DEEF8C6E1B27F360004D2D3D /* FeedViewController.swift in Sources */,
 				DE6126961B26A4E40009FB34 /* ApiKeys.swift in Sources */,
 				DE61261D1B2505950009FB34 /* AppDelegate.swift in Sources */,
 			);
