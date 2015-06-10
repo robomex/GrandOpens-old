@@ -1,0 +1,17 @@
+PODS:
+  - GoogleAnalytics (3.12.0)
+  - Mixpanel (2.8.1):
+    - Mixpanel/Mixpanel (= 2.8.1)
+  - Mixpanel/Mixpanel (2.8.1):
+    - Mixpanel/MPCategoryHelpers
+  - Mixpanel/MPCategoryHelpers (2.8.1)
+
+DEPENDENCIES:
+  - GoogleAnalytics (~> 3.12)
+  - Mixpanel (~> 2.8)
+
+SPEC CHECKSUMS:
+  GoogleAnalytics: ef2e0b800ef3c1e62688cdfc959e0d3132bc246c
+  Mixpanel: 93c4825025e6380ced273ed7178496282e385077
+
+COCOAPODS: 0.37.2
