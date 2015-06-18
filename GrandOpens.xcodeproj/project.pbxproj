@@ -31,6 +31,8 @@
 		DE61268C1B269D8B0009FB34 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DE61268B1B269D8B0009FB34 /* .gitignore */; };
 		DE6126941B26A3CB0009FB34 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE6126931B26A3CB0009FB34 /* ApiKeys.plist */; };
 		DE6126961B26A4E40009FB34 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6126951B26A4E40009FB34 /* ApiKeys.swift */; };
+		DEEB760A1B3298B600A94305 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB76091B3298B600A94305 /* User.swift */; };
+		DEEB760C1B32990700A94305 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB760B1B32990700A94305 /* Venue.swift */; };
 		DEEF8C6E1B27F360004D2D3D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF8C6D1B27F360004D2D3D /* FeedViewController.swift */; };
 		DEEF8C701B27F6AD004D2D3D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF8C6F1B27F6AD004D2D3D /* ListViewController.swift */; };
 		DEEF8C721B27FA40004D2D3D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEF8C711B27FA40004D2D3D /* Social.framework */; };
@@ -78,6 +80,8 @@
 		DE61268B1B269D8B0009FB34 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = GrandOpens/.gitignore; sourceTree = "<group>"; };
 		DE6126931B26A3CB0009FB34 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		DE6126951B26A4E40009FB34 /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		DEEB76091B3298B600A94305 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DEEB760B1B32990700A94305 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		DEEF8C6D1B27F360004D2D3D /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		DEEF8C6F1B27F6AD004D2D3D /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		DEEF8C711B27FA40004D2D3D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -152,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				DE61261C1B2505950009FB34 /* AppDelegate.swift */,
+				DEEB76081B32951000A94305 /* Data */,
 				DE61263F1B2506100009FB34 /* ViewControllers */,
 				DE6126231B2505950009FB34 /* Main.storyboard */,
 				DE6126261B2505950009FB34 /* Images.xcassets */,
@@ -221,6 +226,15 @@
 			);
 			name = Frameworks;
 			path = GrandOpens;
+			sourceTree = "<group>";
+		};
+		DEEB76081B32951000A94305 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DEEB76091B3298B600A94305 /* User.swift */,
+				DEEB760B1B32990700A94305 /* Venue.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,11 +375,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE6126221B2505950009FB34 /* ViewController.swift in Sources */,
+				DEEB760C1B32990700A94305 /* Venue.swift in Sources */,
 				DE6126201B2505950009FB34 /* GrandOpens.xcdatamodeld in Sources */,
 				DEEF8C701B27F6AD004D2D3D /* ListViewController.swift in Sources */,
 				DEEF8C6E1B27F360004D2D3D /* FeedViewController.swift in Sources */,
 				DE6126961B26A4E40009FB34 /* ApiKeys.swift in Sources */,
 				DE61261D1B2505950009FB34 /* AppDelegate.swift in Sources */,
+				DEEB760A1B3298B600A94305 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

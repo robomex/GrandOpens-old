@@ -31,7 +31,7 @@
             </objects>
             <point key="canvasLocation" x="1628" y="52"/>
         </scene>
-        <!--Item 2-->
+        <!--List-->
         <scene sceneID="vi9-p9-kMz">
             <objects>
                 <viewController id="Pat-84-4iT" sceneMemberID="viewController">
@@ -52,7 +52,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Dxv-DL-bUf"/>
+                    <tabBarItem key="tabBarItem" title="List" id="Dxv-DL-bUf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKQ-Od-iyy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,11 +77,11 @@
             </objects>
             <point key="canvasLocation" x="-4" y="406"/>
         </scene>
-        <!--Item-->
+        <!--Feed-->
         <scene sceneID="WgK-yF-phx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="etH-Qb-0nd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="oOx-Rc-Igi"/>
+                    <tabBarItem key="tabBarItem" title="Feed" id="oOx-Rc-Igi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3tR-r4-xyr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
