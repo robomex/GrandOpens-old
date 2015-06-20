@@ -14,3 +14,7 @@ struct User {
     let name: String
     private let pfUser: PFUser
 }
+
+func pfUserToUser(user: PFUser) -> User {
+    return User(id: user.objectId!, name: user.objectForKey("firstName") as! String, pfUser: user)
+}

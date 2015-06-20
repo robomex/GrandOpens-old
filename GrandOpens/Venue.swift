@@ -12,6 +12,6 @@ import Parse
 struct Venue {
     let id: String
     let name: String
-    private let pfVenue: PFVenue
+    private let pfVenue: PFObject
     
 }
