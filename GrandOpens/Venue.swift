@@ -12,6 +12,28 @@ import Parse
 struct Venue {
     let id: String
     let name: String
-    private let pfVenue: PFObject
+}
+
+func fetchVenues (callback: ([Venue]) -> ()) {
     
+    let date = NSCalendar.currentCalendar().dateByAddingUnit(.CalendarUnitDay, value: -33, toDate: NSDate(), options: nil)!
+    
+    PFQuery(className: "Venue")
+        .whereKey("openingDate", greaterThanOrEqualTo: date)
+        .findObjectsInBackgroundWithBlock({
+            objects, error in
+            
+            if let venues = objects as? [PFObject] {
+                let fetchedVenues = venues.map({
+                    (object: PFObject) -> (venueId: String, venueName: String) in
+                    (object.objectId! as String, object.objectForKey("name") as! String)
+                })
+                
+                var v: [Venue] = []
+                for (index, venue) in enumerate(fetchedVenues) {
+                    v.append(Venue(id: fetchedVenues[index].venueId, name: fetchedVenues[index].venueName))
+                }
+                callback(v)
+            }
+        })
 }

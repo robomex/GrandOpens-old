@@ -10,6 +10,8 @@ import UIKit
 
 class FeedTableViewController: UITableViewController {
 
+    var venues: [Venue] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +20,16 @@ class FeedTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        fetchVenues({
+            venues in
+            self.venues = venues
+            self.tableView.reloadData()
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,24 +42,25 @@ class FeedTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return venues.count
     }
 
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("VenueCell", forIndexPath: indexPath) as! VenueCell
 
-        // Configure the cell...
+        let venue = venues[indexPath.row]
+        
+        cell.venueName.text = venue.name
+        //cell.venueNeighborhood.text = venue.neighborhood
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

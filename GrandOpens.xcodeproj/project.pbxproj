@@ -34,6 +34,7 @@
 		DEEB760A1B3298B600A94305 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB76091B3298B600A94305 /* User.swift */; };
 		DEEB760C1B32990700A94305 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB760B1B32990700A94305 /* Venue.swift */; };
 		DEEB760E1B35DD1400A94305 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB760D1B35DD1400A94305 /* FeedTableViewController.swift */; };
+		DEEB76111B35E7B100A94305 /* VenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB76101B35E7B100A94305 /* VenueCell.swift */; };
 		DEEF8C701B27F6AD004D2D3D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF8C6F1B27F6AD004D2D3D /* ListViewController.swift */; };
 		DEEF8C721B27FA40004D2D3D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEF8C711B27FA40004D2D3D /* Social.framework */; };
 		DEEF8C741B27FA46004D2D3D /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEF8C731B27FA46004D2D3D /* Accounts.framework */; };
@@ -83,6 +84,7 @@
 		DEEB76091B3298B600A94305 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DEEB760B1B32990700A94305 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		DEEB760D1B35DD1400A94305 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		DEEB76101B35E7B100A94305 /* VenueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueCell.swift; sourceTree = "<group>"; };
 		DEEF8C6F1B27F6AD004D2D3D /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		DEEF8C711B27FA40004D2D3D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		DEEF8C731B27FA46004D2D3D /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -157,6 +159,7 @@
 			children = (
 				DE61261C1B2505950009FB34 /* AppDelegate.swift */,
 				DEEB76081B32951000A94305 /* Data */,
+				DEEB760F1B35E79A00A94305 /* Views */,
 				DE61263F1B2506100009FB34 /* ViewControllers */,
 				DE6126231B2505950009FB34 /* Main.storyboard */,
 				DE6126261B2505950009FB34 /* Images.xcassets */,
@@ -235,6 +238,14 @@
 				DEEB760B1B32990700A94305 /* Venue.swift */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		DEEB760F1B35E79A00A94305 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEEB76101B35E7B100A94305 /* VenueCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +388,7 @@
 				DE6126221B2505950009FB34 /* ViewController.swift in Sources */,
 				DEEB760C1B32990700A94305 /* Venue.swift in Sources */,
 				DE6126201B2505950009FB34 /* GrandOpens.xcdatamodeld in Sources */,
+				DEEB76111B35E7B100A94305 /* VenueCell.swift in Sources */,
 				DEEF8C701B27F6AD004D2D3D /* ListViewController.swift in Sources */,
 				DEEB760E1B35DD1400A94305 /* FeedTableViewController.swift in Sources */,
 				DE6126961B26A4E40009FB34 /* ApiKeys.swift in Sources */,

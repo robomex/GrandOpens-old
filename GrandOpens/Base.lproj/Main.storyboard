@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="VenueCell" textLabel="Lq6-e6-baU" detailTextLabel="uKf-Dz-25P" style="IBUITableViewCellStyleSubtitle" id="ExP-gc-6df">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="VenueCell" textLabel="Lq6-e6-baU" detailTextLabel="uKf-Dz-25P" style="IBUITableViewCellStyleSubtitle" id="ExP-gc-6df" customClass="VenueCell" customModule="GrandOpens" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ExP-gc-6df" id="CAB-V5-6lW">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -32,6 +32,10 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="venueName" destination="Lq6-e6-baU" id="bzd-fj-TqP"/>
+                                    <outlet property="venueNeighborhood" destination="uKf-Dz-25P" id="fuq-0x-yZf"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
