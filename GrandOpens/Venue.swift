@@ -12,6 +12,7 @@ import Parse
 struct Venue {
     let id: String
     let name: String
+    let neighborhood: String
 }
 
 func fetchVenues (callback: ([Venue]) -> ()) {
@@ -25,13 +26,13 @@ func fetchVenues (callback: ([Venue]) -> ()) {
             
             if let venues = objects as? [PFObject] {
                 let fetchedVenues = venues.map({
-                    (object: PFObject) -> (venueId: String, venueName: String) in
-                    (object.objectId! as String, object.objectForKey("name") as! String)
+                    (object: PFObject) -> (venueId: String, venueName: String, venueNeighborhood: String) in
+                    (object.objectId! as String, object.objectForKey("name") as! String, object.objectForKey("neighborhood") as! String)
                 })
                 
                 var v: [Venue] = []
                 for (index, venue) in enumerate(fetchedVenues) {
-                    v.append(Venue(id: fetchedVenues[index].venueId, name: fetchedVenues[index].venueName))
+                    v.append(Venue(id: fetchedVenues[index].venueId, name: fetchedVenues[index].venueName, neighborhood: fetchedVenues[index].venueNeighborhood))
                 }
                 callback(v)
             }

@@ -57,7 +57,7 @@ class FeedTableViewController: UITableViewController {
         let venue = venues[indexPath.row]
         
         cell.venueName.text = venue.name
-        //cell.venueNeighborhood.text = venue.neighborhood
+        cell.venueNeighborhood.text = venue.neighborhood
 
         return cell
     }
