@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B186581EA275454E96726FB5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C76884947107DFCEFA938398 /* libPods.a */; };
-		DE0E0FC21B3F6DAB0079B5E5 /* Muli-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE0E0FC11B3F6DAB0079B5E5 /* Muli-Light.ttf */; };
+		DE0B9F371B3F89A3000EA55D /* Muli-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE0B9F361B3F89A3000EA55D /* Muli-Regular.ttf */; };
 		DE0E0FC41B3F6DB80079B5E5 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE0E0FC31B3F6DB80079B5E5 /* Quicksand-Light.ttf */; };
 		DE61261D1B2505950009FB34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE61261C1B2505950009FB34 /* AppDelegate.swift */; };
 		DE6126201B2505950009FB34 /* GrandOpens.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE61261E1B2505950009FB34 /* GrandOpens.xcdatamodeld */; };
@@ -56,7 +56,7 @@
 		474F907ED68B85B1DDA5E53D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A1CBDC77E94829340050B45B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C76884947107DFCEFA938398 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE0E0FC11B3F6DAB0079B5E5 /* Muli-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Light.ttf"; sourceTree = "<group>"; };
+		DE0B9F361B3F89A3000EA55D /* Muli-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Regular.ttf"; sourceTree = "<group>"; };
 		DE0E0FC31B3F6DB80079B5E5 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
 		DE6126171B2505950009FB34 /* GrandOpens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrandOpens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE61261B1B2505950009FB34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -180,7 +180,7 @@
 				DE61261B1B2505950009FB34 /* Info.plist */,
 				DE6126931B26A3CB0009FB34 /* ApiKeys.plist */,
 				DE6126951B26A4E40009FB34 /* ApiKeys.swift */,
-				DE0E0FC11B3F6DAB0079B5E5 /* Muli-Light.ttf */,
+				DE0B9F361B3F89A3000EA55D /* Muli-Regular.ttf */,
 				DE0E0FC31B3F6DB80079B5E5 /* Quicksand-Light.ttf */,
 			);
 			name = "Supporting Files";
@@ -338,10 +338,10 @@
 			files = (
 				DE61268C1B269D8B0009FB34 /* .gitignore in Resources */,
 				DE6126251B2505950009FB34 /* Main.storyboard in Resources */,
+				DE0B9F371B3F89A3000EA55D /* Muli-Regular.ttf in Resources */,
 				DE61262A1B2505950009FB34 /* LaunchScreen.xib in Resources */,
 				DE0E0FC41B3F6DB80079B5E5 /* Quicksand-Light.ttf in Resources */,
 				DE6126271B2505950009FB34 /* Images.xcassets in Resources */,
-				DE0E0FC21B3F6DAB0079B5E5 /* Muli-Light.ttf in Resources */,
 				DE6126941B26A3CB0009FB34 /* ApiKeys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

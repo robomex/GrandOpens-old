@@ -20,10 +20,17 @@ class FeedTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        
+        if let font = UIFont(name: "Muli", size: 26) {
+            navigationController!.navigationBar.topItem!.title = "Chicago"
+            navigationController!.navigationBar.titleTextAttributes = [NSFontAttributeName: font, NSForegroundColorAttributeName: UIColor.whiteColor()]
+        }
         
         fetchVenues({
             venues in
