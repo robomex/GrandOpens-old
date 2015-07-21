@@ -33,6 +33,7 @@
 		DE61268C1B269D8B0009FB34 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DE61268B1B269D8B0009FB34 /* .gitignore */; };
 		DE6126941B26A3CB0009FB34 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE6126931B26A3CB0009FB34 /* ApiKeys.plist */; };
 		DE6126961B26A4E40009FB34 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6126951B26A4E40009FB34 /* ApiKeys.swift */; };
+		DE8300611B5EFF7C000B71D7 /* VenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8300601B5EFF7C000B71D7 /* VenueViewController.swift */; };
 		DEEB760A1B3298B600A94305 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB76091B3298B600A94305 /* User.swift */; };
 		DEEB760C1B32990700A94305 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB760B1B32990700A94305 /* Venue.swift */; };
 		DEEB760E1B35DD1400A94305 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB760D1B35DD1400A94305 /* FeedTableViewController.swift */; };
@@ -85,6 +86,8 @@
 		DE61268B1B269D8B0009FB34 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = GrandOpens/.gitignore; sourceTree = "<group>"; };
 		DE6126931B26A3CB0009FB34 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		DE6126951B26A4E40009FB34 /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		DE8300601B5EFF7C000B71D7 /* VenueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueViewController.swift; sourceTree = "<group>"; };
+		DE8300631B5F01E2000B71D7 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		DEEB76091B3298B600A94305 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DEEB760B1B32990700A94305 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		DEEB760D1B35DD1400A94305 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +185,7 @@
 				DE6126951B26A4E40009FB34 /* ApiKeys.swift */,
 				DE0B9F361B3F89A3000EA55D /* Muli-Regular.ttf */,
 				DE0E0FC31B3F6DB80079B5E5 /* Quicksand-Light.ttf */,
+				DE8300631B5F01E2000B71D7 /* Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -208,6 +212,7 @@
 			children = (
 				DE6126211B2505950009FB34 /* ViewController.swift */,
 				DEEB760D1B35DD1400A94305 /* FeedTableViewController.swift */,
+				DE8300601B5EFF7C000B71D7 /* VenueViewController.swift */,
 				DEEF8C6F1B27F6AD004D2D3D /* ListViewController.swift */,
 			);
 			name = ViewControllers;
@@ -399,6 +404,7 @@
 				DEEB76111B35E7B100A94305 /* VenueCell.swift in Sources */,
 				DEEF8C701B27F6AD004D2D3D /* ListViewController.swift in Sources */,
 				DEEB760E1B35DD1400A94305 /* FeedTableViewController.swift in Sources */,
+				DE8300611B5EFF7C000B71D7 /* VenueViewController.swift in Sources */,
 				DE6126961B26A4E40009FB34 /* ApiKeys.swift in Sources */,
 				DE61261D1B2505950009FB34 /* AppDelegate.swift in Sources */,
 				DEEB760A1B3298B600A94305 /* User.swift in Sources */,
@@ -538,6 +544,7 @@
 				INFOPLIST_FILE = GrandOpens/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GrandOpens/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -553,6 +560,7 @@
 				INFOPLIST_FILE = GrandOpens/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GrandOpens/Bridging-Header.h";
 			};
 			name = Release;
 		};
