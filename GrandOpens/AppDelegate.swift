@@ -10,6 +10,8 @@ import UIKit
 import CoreData
 import Parse
 import Bolts
+import Fabric
+import DigitsKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -28,6 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Track statistics around application opens with Parse
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        Fabric.with([Digits()])
         
         return true
     }

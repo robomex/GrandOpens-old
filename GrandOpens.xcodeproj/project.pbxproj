@@ -33,6 +33,7 @@
 		DE61268C1B269D8B0009FB34 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DE61268B1B269D8B0009FB34 /* .gitignore */; };
 		DE6126941B26A3CB0009FB34 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE6126931B26A3CB0009FB34 /* ApiKeys.plist */; };
 		DE6126961B26A4E40009FB34 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6126951B26A4E40009FB34 /* ApiKeys.swift */; };
+		DE7EF4561B5FF44A00FDD765 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7EF4551B5FF44A00FDD765 /* LoginViewController.swift */; };
 		DE8300611B5EFF7C000B71D7 /* VenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8300601B5EFF7C000B71D7 /* VenueViewController.swift */; };
 		DEEB760A1B3298B600A94305 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB76091B3298B600A94305 /* User.swift */; };
 		DEEB760C1B32990700A94305 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB760B1B32990700A94305 /* Venue.swift */; };
@@ -86,6 +87,7 @@
 		DE61268B1B269D8B0009FB34 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = GrandOpens/.gitignore; sourceTree = "<group>"; };
 		DE6126931B26A3CB0009FB34 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		DE6126951B26A4E40009FB34 /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		DE7EF4551B5FF44A00FDD765 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DE8300601B5EFF7C000B71D7 /* VenueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueViewController.swift; sourceTree = "<group>"; };
 		DE8300631B5F01E2000B71D7 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		DEEB76091B3298B600A94305 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				DE6126211B2505950009FB34 /* ViewController.swift */,
+				DE7EF4551B5FF44A00FDD765 /* LoginViewController.swift */,
 				DEEB760D1B35DD1400A94305 /* FeedTableViewController.swift */,
 				DE8300601B5EFF7C000B71D7 /* VenueViewController.swift */,
 				DEEF8C6F1B27F6AD004D2D3D /* ListViewController.swift */,
@@ -271,6 +274,7 @@
 				DE6126141B2505950009FB34 /* Frameworks */,
 				DE6126151B2505950009FB34 /* Resources */,
 				C669AE7BEC96045D31EED5F2 /* Copy Pods Resources */,
+				DEAB9A9F1B5F1338009B2E84 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -391,6 +395,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DEAB9A9F1B5F1338009B2E84 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/Fabric.framework/run\" 1d0ec2c4d85a94e0680d7d48f83792fc7b1e7a3b 18dacb4b2e06e94b26b8e60438499ba73b5cf658d53149d70881d261b2d7fe95";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -408,6 +425,7 @@
 				DE6126961B26A4E40009FB34 /* ApiKeys.swift in Sources */,
 				DE61261D1B2505950009FB34 /* AppDelegate.swift in Sources */,
 				DEEB760A1B3298B600A94305 /* User.swift in Sources */,
+				DE7EF4561B5FF44A00FDD765 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

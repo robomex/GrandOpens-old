@@ -18,7 +18,7 @@ class VenueViewController: JSQMessagesViewController {
         
         // Do any additional setup after loading the view.
     }
-    
+    /*
     func senderDisplayName() -> String! {
         return currentUser()!.id
     }
@@ -26,7 +26,7 @@ class VenueViewController: JSQMessagesViewController {
     func senderId() -> String! {
         return currentUser()!.id
     }
-    
+    */
     override func collectionView(collectionView: JSQMessagesCollectionView!, messageDataForItemAtIndexPath indexPath: NSIndexPath!) -> JSQMessageData! {
         
         var data = self.messages[indexPath.row]
