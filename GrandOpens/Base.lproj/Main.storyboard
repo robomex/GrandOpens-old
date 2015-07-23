@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Nwp-Ia-E1q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m92-BU-hSl">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -82,10 +82,42 @@
             </objects>
             <point key="canvasLocation" x="816" y="738"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="LxD-1c-gAV">
+            <objects>
+                <viewController id="m92-BU-hSl" customClass="LoginViewController" customModule="GrandOpens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R1D-Le-60u"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ir1-vq-7yN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PP1-rd-U2D">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rN-hA-Ckn">
+                                <rect key="frame" x="285" y="442" width="31" height="30"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipLoginButtonPressed:" destination="m92-BU-hSl" eventType="touchUpInside" id="3Aj-cm-CTQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="4rN-hA-Ckn" secondAttribute="centerX" constant="-0.5" id="eyC-2F-GpX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hde-E6-gRo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="-270"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1TJ-Dr-wbt">
             <objects>
-                <tabBarController id="Nwp-Ia-E1q" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainNavController" id="Nwp-Ia-E1q" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="au2-CR-bep">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>

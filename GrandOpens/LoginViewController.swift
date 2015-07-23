@@ -29,6 +29,12 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func skipLoginButtonPressed(sender: AnyObject) {
+        
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MainNavController") as? UIViewController
+        
+        presentViewController(vc!, animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
