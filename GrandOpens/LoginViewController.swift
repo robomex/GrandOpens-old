@@ -13,13 +13,20 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let user: PFUser
+        
         let authenticateButton = DGTAuthenticateButton(authenticationCompletion: {
             (session: DGTSession!, error: NSError!) in
             // play with Digits session
+            
         })
         authenticateButton.center = self.view.center
         self.view.addSubview(authenticateButton)
+        
+        if DGTUser. != nil {
+            println(DGTSession.userID)
+        }
         
         // Do any additional setup after loading the view.
     }

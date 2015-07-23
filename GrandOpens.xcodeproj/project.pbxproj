@@ -35,6 +35,7 @@
 		DE7EF4561B5FF44A00FDD765 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7EF4551B5FF44A00FDD765 /* LoginViewController.swift */; };
 		DE8300611B5EFF7C000B71D7 /* VenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8300601B5EFF7C000B71D7 /* VenueViewController.swift */; };
 		DEE39DFE1B60A74300879A9B /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEE39DFD1B60A74300879A9B /* ApiKeys.plist */; };
+		DEE39E011B60ABE600879A9B /* PFUser+Digits.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE39E001B60ABE600879A9B /* PFUser+Digits.m */; };
 		DEEB760A1B3298B600A94305 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB76091B3298B600A94305 /* User.swift */; };
 		DEEB760C1B32990700A94305 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB760B1B32990700A94305 /* Venue.swift */; };
 		DEEB760E1B35DD1400A94305 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB760D1B35DD1400A94305 /* FeedTableViewController.swift */; };
@@ -90,6 +91,8 @@
 		DE8300601B5EFF7C000B71D7 /* VenueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueViewController.swift; sourceTree = "<group>"; };
 		DE8300631B5F01E2000B71D7 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		DEE39DFD1B60A74300879A9B /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
+		DEE39DFF1B60ABE600879A9B /* PFUser+Digits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFUser+Digits.h"; sourceTree = "<group>"; };
+		DEE39E001B60ABE600879A9B /* PFUser+Digits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFUser+Digits.m"; sourceTree = "<group>"; };
 		DEEB76091B3298B600A94305 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DEEB760B1B32990700A94305 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		DEEB760D1B35DD1400A94305 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +188,8 @@
 				DE61261B1B2505950009FB34 /* Info.plist */,
 				DEE39DFD1B60A74300879A9B /* ApiKeys.plist */,
 				DE6126951B26A4E40009FB34 /* ApiKeys.swift */,
+				DEE39DFF1B60ABE600879A9B /* PFUser+Digits.h */,
+				DEE39E001B60ABE600879A9B /* PFUser+Digits.m */,
 				DE0B9F361B3F89A3000EA55D /* Muli-Regular.ttf */,
 				DE0E0FC31B3F6DB80079B5E5 /* Quicksand-Light.ttf */,
 				DE8300631B5F01E2000B71D7 /* Bridging-Header.h */,
@@ -417,6 +422,7 @@
 			files = (
 				DE6126221B2505950009FB34 /* ViewController.swift in Sources */,
 				DEEB760C1B32990700A94305 /* Venue.swift in Sources */,
+				DEE39E011B60ABE600879A9B /* PFUser+Digits.m in Sources */,
 				DE6126201B2505950009FB34 /* GrandOpens.xcdatamodeld in Sources */,
 				DEEB76111B35E7B100A94305 /* VenueCell.swift in Sources */,
 				DEEF8C701B27F6AD004D2D3D /* ListViewController.swift in Sources */,
