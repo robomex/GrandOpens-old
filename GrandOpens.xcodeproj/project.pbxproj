@@ -31,10 +31,10 @@
 		DE6126881B2697B30009FB34 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6126871B2697B30009FB34 /* libz.dylib */; };
 		DE61268A1B2697C80009FB34 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6126891B2697C80009FB34 /* libsqlite3.dylib */; };
 		DE61268C1B269D8B0009FB34 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DE61268B1B269D8B0009FB34 /* .gitignore */; };
-		DE6126941B26A3CB0009FB34 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE6126931B26A3CB0009FB34 /* ApiKeys.plist */; };
 		DE6126961B26A4E40009FB34 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6126951B26A4E40009FB34 /* ApiKeys.swift */; };
 		DE7EF4561B5FF44A00FDD765 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7EF4551B5FF44A00FDD765 /* LoginViewController.swift */; };
 		DE8300611B5EFF7C000B71D7 /* VenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8300601B5EFF7C000B71D7 /* VenueViewController.swift */; };
+		DEE39DFE1B60A74300879A9B /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEE39DFD1B60A74300879A9B /* ApiKeys.plist */; };
 		DEEB760A1B3298B600A94305 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB76091B3298B600A94305 /* User.swift */; };
 		DEEB760C1B32990700A94305 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB760B1B32990700A94305 /* Venue.swift */; };
 		DEEB760E1B35DD1400A94305 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB760D1B35DD1400A94305 /* FeedTableViewController.swift */; };
@@ -85,11 +85,11 @@
 		DE6126871B2697B30009FB34 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DE6126891B2697C80009FB34 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		DE61268B1B269D8B0009FB34 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = GrandOpens/.gitignore; sourceTree = "<group>"; };
-		DE6126931B26A3CB0009FB34 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		DE6126951B26A4E40009FB34 /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		DE7EF4551B5FF44A00FDD765 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DE8300601B5EFF7C000B71D7 /* VenueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueViewController.swift; sourceTree = "<group>"; };
 		DE8300631B5F01E2000B71D7 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		DEE39DFD1B60A74300879A9B /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		DEEB76091B3298B600A94305 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DEEB760B1B32990700A94305 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		DEEB760D1B35DD1400A94305 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
@@ -183,7 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				DE61261B1B2505950009FB34 /* Info.plist */,
-				DE6126931B26A3CB0009FB34 /* ApiKeys.plist */,
+				DEE39DFD1B60A74300879A9B /* ApiKeys.plist */,
 				DE6126951B26A4E40009FB34 /* ApiKeys.swift */,
 				DE0B9F361B3F89A3000EA55D /* Muli-Regular.ttf */,
 				DE0E0FC31B3F6DB80079B5E5 /* Quicksand-Light.ttf */,
@@ -345,13 +345,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE39DFE1B60A74300879A9B /* ApiKeys.plist in Resources */,
 				DE61268C1B269D8B0009FB34 /* .gitignore in Resources */,
 				DE6126251B2505950009FB34 /* Main.storyboard in Resources */,
 				DE0B9F371B3F89A3000EA55D /* Muli-Regular.ttf in Resources */,
 				DE61262A1B2505950009FB34 /* LaunchScreen.xib in Resources */,
 				DE0E0FC41B3F6DB80079B5E5 /* Quicksand-Light.ttf in Resources */,
 				DE6126271B2505950009FB34 /* Images.xcassets in Resources */,
-				DE6126941B26A3CB0009FB34 /* ApiKeys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
