@@ -85,7 +85,7 @@
         <!--Login View Controller-->
         <scene sceneID="LxD-1c-gAV">
             <objects>
-                <viewController id="m92-BU-hSl" customClass="LoginViewController" customModule="GrandOpens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="m92-BU-hSl" customClass="LoginViewController" customModule="GrandOpens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R1D-Le-60u"/>
                         <viewControllerLayoutGuide type="bottom" id="Ir1-vq-7yN"/>
