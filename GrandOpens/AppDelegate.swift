@@ -33,6 +33,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Fabric.with([Digits()])
         
+        var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        var initialViewController: UIViewController
+        if PFUser.currentUser() != nil {
+            initialViewController = storyboard.instantiateViewControllerWithIdentifier("MainNavController") as! UIViewController
+        } else {
+            initialViewController = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") as! UIViewController
+        }
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
